@@ -1,0 +1,389 @@
+@charset "utf-8";
+body {
+	/* [disabled]background-color: #fbf8f0; */
+}
+/* CSS Document */
+#index {
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+
+}
+h1 img{
+	float: left;
+	margin-left: 34px;
+}
+nav a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+nav a::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #79551A;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+nav a:hover::after {
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul{
+	display: flex;
+	float: right;
+}
+nav ul li{
+	display: grid;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-right: 34px;
+}
+nav ul li img{
+	text-align: center;
+	margin:0 auto 10px auto;
+}
+.mainimg  {
+	clear: both;
+	/* width: 100%; */
+	max-width: 100%;
+	/* [disabled]position: relative; */
+}
+.container {
+	display: flex;
+	justify-content: space-around;
+	/* [disabled]position: absolute; */
+	position: absolute;
+	top: -30px;
+	width: 100%;
+	background-color: rgba(255,255,255,0.6);
+	/* -隆也君追加分- */
+	z-index: 1;
+	/* -ここまで- */
+}
+main{
+	text-align: center;
+	display: block;
+}
+.mainimg ol {
+	float: left;
+}
+.info{/*背景*/
+    /*background-image: url(img/bg-about.png);*/
+    /*background-repeat: no-repeat;*/
+/*	background-color: #dcbf78;*/
+    width: 100%;
+    /*background-size: contain; /*縦横比キープで、表示領域に収まるよう表示*/
+/*
+    padding-top: 30px;
+    padding-bottom: 30px;
+	text-align: center;
+	margin-top: 100px;
+*/
+	animation-name: SlideUp;/* アニメーション名 */
+	animation-duration: 2s;/* アニメーション時間 */
+	animation-duration: 4s;
+	/* animation-delay: 5s; */
+	}
+
+@keyframes SlideUp {
+from {
+    opacity: 0;
+    transform: translateY(1000px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);/* Y軸方向に0px */
+}
+}
+
+.yakudati{/*背景*/
+    /*background-image: url(img/bg-about.png);*/
+    /*background-repeat: no-repeat;*/
+/*	background-color: #dcbf78;*/
+    width: 100%;
+    /*background-size: contain; /*縦横比キープで、表示領域に収まるよう表示*/
+/*
+    padding-top: 30px;
+    padding-bottom: 30px;
+	text-align: center;
+	margin-top: 100px;
+*/
+	animation-name: LeftToRight;/* アニメーション名 */
+	animation-duration: 2s;/* アニメーション時間 */
+	animation-duration: 5s;
+	}
+
+@keyframes LeftToRight {
+from {
+    opacity: 0;
+    transform: translateX(-300px);
+}
+to {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+.arch{/*背景*/
+    /*background-image: url(img/bg-about.png);*/
+    /*background-repeat: no-repeat;*/
+/*	background-color: #dcbf78;*/
+    width: 100%;
+    /*background-size: contain; /*縦横比キープで、表示領域に収まるよう表示*/
+/*
+    padding-top: 30px;
+    padding-bottom: 30px;
+	text-align: center;
+	margin-top: 100px;
+*/
+	animation-name: RighttoLeft;/* アニメーション名 */
+	animation-duration: 2s;/* アニメーション時間 */
+	animation-duration: 6s;
+	}
+
+@keyframes RighttoLeft {
+from {
+    opacity: 0;
+    transform: translateX(300px);
+}
+to {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+
+
+.info h2{
+	margin-top: 100px;
+	margin-bottom: 45px;
+}
+.center::before{
+	content: url(img/sintyaku1_1.jpg);
+	display: block;
+	height: 32px;
+}
+.center {
+	background-image: url(img/sintyaku1_2.jpg);
+	margin: 0 auto;
+	background-repeat: repeat-y;
+	width: 956px;
+	border-bottom: 1px solid #79551A;
+}
+.fast {
+	border-bottom: 1px solid #79551a;
+	text-align: left;
+	margin-left: 5px;
+	color: #79551A;
+	/* -隆也君追加分- */
+	padding-top: 6px;
+	/* -ここまで- */
+}
+.second {
+	/* [disabled]border-bottom: 1px solid #79551a; */
+	text-align: left;
+	margin-left: 5px;
+	color: #79551A;
+	/* -隆也君追加分- */
+	padding-top: 4px;
+	/* -ここまで- */
+}
+
+
+.center::after {
+	content: url(img/sintyaku1_3.jpg);
+	height: 16px;
+	display: block;
+
+}
+
+.yakudati{
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom:100px;
+	background-image: url(img/yakuati.png);
+	text-align: left;
+	  display: flex;
+/*  justify-content: space-around;*/
+}
+.box {
+	margin: 0 auto;
+    display: flex;
+}
+
+
+.box1{
+	padding-top: 34px;
+}
+.box2{
+
+	padding-top: 34px;
+	margin-left: 60px;
+}
+.yakudati1 {
+	background-color: #fbf8f0;
+	width: 666px;
+	margin-bottom: 25px;
+	color: #79551A;
+	display: flex;
+	/* -隆也君追加分- */
+	height: 100px;
+	/* -ここまで- */
+}
+.yakudati2 {
+	width: 666px;
+	background-color: #fbf8f0;
+	margin-bottom: 34px;
+	color: #79551A;
+	/* -隆也君追加分- */
+	display: flex;
+	height: 100px;
+	/* -ここまで- */
+}
+.arch {
+
+}
+.arch1 {
+	position: relative;
+	bottom: 0px;
+	right: 0px;
+}
+
+
+.arch h2 {
+	margin-bottom: 45px;
+}
+.arch .textbox {
+	position: absolute;
+    bottom: -182px;
+    right: 347px;
+}
+
+.slide{
+	margin: 266px auto 0;
+	background-color: #fbf8f0;
+	/* [disabled]height: 230px; */
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+	width: 984px;
+}
+.slide img {
+	width: 300px;
+	height: 150px;
+}
+.inner p {
+	float: left;
+	margin-left: 14px;
+	margin-right: 14px;
+}
+.inner {
+
+}
+
+
+.ace {
+	margin-top: 100px;
+	width: 100%;
+}
+.ace h2 {
+	margin-bottom: 40px;
+}
+.ace iframe {
+    margin-bottom: 40px;
+	width: 100%;
+}
+.ace p {
+    text-align: left;
+	margin-left: 34px;
+}
+.slide p {
+	float: left;
+}
+
+
+
+.gotop {
+    text-align: right;
+    margin-right: 34px;
+    margin-top: 40px;
+		/* background-image: url(img/gotop.png); */
+}
+.gotop-hover:hover {
+    display: inline-block;
+    animation: gotop .1s  infinite;
+}
+
+@keyframes gotop {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+footer {
+    width: 100%;
+    background-color: #c2b3a2;
+}
+footer ul {
+    list-style: none;
+    padding-top: 45px;
+	padding-left: 34px;
+}
+.f1:hover{
+color: #fff;
+}
+.f2:hover{
+color: #fff;
+}
+.f3:hover{
+color: #fff;
+}
+.f4:hover{
+color: #fff;
+}
+.f5:hover{
+color: #fff;
+}
+.f6:hover{
+	color: #fff;
+/* color: #79551a; */
+}
+.ficon{
+	 display: flex;
+  justify-content: space-around;
+}
+.copy {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.parent-container{
+	position: relative;
+}
+/* -隆也君追加分- */
+.border-rd{
+	border: solid 3px #79551a;
+	border-radius: 9px;
+	padding:0 16px;
+	display: inline-block;
+	margin-left: 34px;
+}
+
+
+.box2 .right{
+	padding-left: 16px;
+}
+
+.box2 p{
+	margin:10px 0;
+}
+/* -ここまで- */
